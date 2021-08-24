@@ -1,0 +1,73 @@
+\documentclass[10pt,a4paper,landscape,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\author{Ondřej Zelenka}
+\title{Závěrečná paralympiáda mladších 2021}
+
+% nastavit číslování úloh bez 0 jakožto čísla sekce na začátku
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+
+% vytvořit counter na body a definovat příkazy pro skloňování slova "bod" a tvorbu úlohy
+\newcounter{bodycounter}
+\newcommand{\bodystring}[1]{\ifnum #1=1 1 bod\else\ifnum #1<5 #1 body\else #1 bodů\fi\fi}
+\newcommand{\uloha}[3]{
+\subsection{#1 (\bodystring{#2})}
+#3\addtocounter{bodycounter}{#2}}
+
+\pagestyle{empty}
+\begin{document}
+\section*{Závěrečná paralympiáda starších LMFS 2021}
+
+\uloha{Antireflexní brýle}{12}{
+Tomáš má brýle ze skla s indexem lomu 1.52, ale odrážejí podle něj příliš mnoho světla. Aplikoval na ně tedy vrstvu $\mathrm{MgF_2}$ o indexu lomu 1.38, aby mezi světlem odraženým rozhraním vzduch-$\mathrm{MgF_2}$ a světlem odraženým rozhraním $\mathrm{MgF_2}$-sklo došlo k destruktivní interferenci. Jak silnou vrstvu má zvolit, aby úplně odstranil odrazy kolmo dopadajícího zeleného světla?
+}
+
+\uloha{Ponorky}{10}{
+Při honu za vlajkou se jedna z ponorek poněkud vymkla kontrole, ponořila se do nádrže Josefův důl a dále hledala vlajku. Když to konečně na dně v hloubce 10 metrů vzdala, začala svítit baterkou o záchranu. Jak blízko musí připlout Pobřežní hlídka, aby ji našla? Uvažujte, že David Hasselhoff má oči přímo nad dokonale klidnou hladinou a spočítejte vzdálenost od bodu na hladině přímo nad ponorkou.
+}
+
+\uloha{Ponorky Reloaded}{8}{
+Při záchraně ponorky ve vodě ztratila Pamela Anderson své tmavě oranžové plavky. Požádala Víťu o pomoc, a oba hledají oranžové plavky na dně. Víťa ovšem zapomněl, že světlo při přechodu do prostředí s jiným indexem lomu mění vlnovou délku a nezamyslel se, kterou barvu tedy má hledat. Pokud i ve vodě hledá stejnou tmavě oranžovou, najde je? Důkladně zdůvodněte!
+}
+
+\uloha{Ponorky Revolutions}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\subsection*{Užitečné konstanty}
+Indexy lomu: vakuum 1, vzduch 1.00026, voda 1.33 \\
+Vlnové délky ve vzduchu: zelená 532 nm, tmavě oranžová 600 nm
+
+\newpage Celkem \arabic{bodycounter} bodů.
+
+\end{document}
