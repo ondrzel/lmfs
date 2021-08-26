@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper,landscape,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\author{Ondřej Zelenka}
+\title{Závěrečná paralympiáda mladších 2021}
+
+% nastavit číslování úloh bez 0 jakožto čísla sekce na začátku
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+
+% vytvořit counter na body a definovat příkazy pro skloňování slova "bod" a tvorbu úlohy
+\newcounter{bodycounter}
+\newcommand{\bodystring}[1]{\ifnum #1=1 1 bod\else\ifnum #1<5 #1 body\else #1 bodů\fi\fi}
+\newcommand{\uloha}[3]{
+\subsection{#1 (\bodystring{#2})}
+#3\addtocounter{bodycounter}{#2}}
+
+\pagestyle{empty}
+\begin{document}
+\section*{Závěrečná paralympiáda mladších LMFS 2021}
+
+\uloha{Kvalitní guma}{10}{
+Síla je
+\begin{equation}
+F = -kx^3
+\end{equation}
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Ondra běží na Královku. Po rovině těsně před začátkem kopce v nadmořské výšce $731$ m běží rychlostí $14~\mathrm{km\cdot h^{-1}}$ a na vrchol $858$ m.n.m sotva došlapuje rychlostí $5~\mathrm{km\cdot h^{-1}}$. Kolik tyčinek M{\"u}sli na zdraví s borůvkami a malinami o energetické hodnotě 1607 kJ musí Ondra sníst, aby doplnil energii?
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Ponorky Revolutions}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\uloha{Jasný bod na obloze}{10}{
+Tady je text úlohy!
+}
+
+\subsection*{Užitečné konstanty}
+Indexy lomu: vakuum 1, vzduch 1.00026, voda 1.33 \\
+Vlnové délky ve vzduchu: zelená 532 nm, tmavě oranžová 600 nm\\
+Ondrova hmotnost: 65 kg
+
+\newpage Celkem \arabic{bodycounter} bodů.
+
+\end{document}
