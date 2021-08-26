@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[cp1250]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\section*{Prùbìžná olympiáda - fyzika starší - 1. kolo}
+
+\subsection*{0. Skalární souèin}
+
+Nebodovaná úloha pro zábavu a dobrovolné rozšíøení lineární algebry!
+\\
+Mìjme prostor polynomù (staèí uvažovat prostor polynomù do stupnì $n$, napø. 3). Na nich definujme skalární souèin v nìkterém z níže uvedených tvarù (vyberte si jeden èi klidnì všechny) a zvolme si opìt bázi tohoto prostoru ve tvaru $\{1,x,x^2,x^3,...\}$. Urèete, zda je báze ortogonální. Pokud zjistíte, že není, zkuste si rozmyslet, jakým procesem byste mohli její ortogonalizaci provést. Protože se jedná o úlohu jen pro vás, uvedu pro kontrolu èi pro nápovìdu, že existuje standardnì používaný proces, který se nazývá Gram-Schmidtova ortogonalizace (kreativitì se ale meze nekladou). Použitím standardního postupu dojdete použitím rùzných skalárních souèinù k rùzným standardním ortogonálním systémùm polynomù.
+\begin{subequations}
+\begin{align}
+\text{Legendreovy polynomy:}\qquad&\left<\varphi|\psi\right> = \int_{-1}^{1}\varphi^\ast(x)\psi(x)\text{d}x\\
+\text{Hermitovy polynomy:}\qquad&\left<\varphi|\psi\right> = \int_{-\infty}^{+\infty}\varphi^\ast(x)\psi(x)e^{-x^2}\text{d}x\\
+\text{Laguerrovy polynomy:}\qquad&\left<\varphi|\psi\right> = \int_{0}^{+\infty}\varphi^\ast(x)\psi(x)e^{-x}\text{d}x
+\end{align}
+\end{subequations}
+\begin{equation}
+\text{Pomùcky: }\int_{-\infty}^{\infty}x^{2n}e^{-x^2}\text{d}x = \frac{(2n)!\sqrt{\pi}}{2^{2n}n!},\quad \int_0^{+\infty} x^ne^{-x}\text{d}x = n!
+\end{equation}
+
+\subsection*{1. Millikanùv pokus}
+
+Zmìøte elementární náboj. \emph{(3 body)}
+\\
+Nebojte, nemusíte nic skuteènì mìøit, budete mìøit jen na papíøe. Pøedstavte si, že máte nehybnou viskózní kapalinu v homogenním tíhovém poli a do ní vstøikujete malé nabité kapièky oleje podobné (ale ne stejné) hustoty. Tyto kapièky se pohybují pouze vertikálnì a protože kapalina je velmi viskózní, lze její odpor popsat Stokesovým vzorcem
+\begin{equation}
+F_S = 6\pi\mu Rv,
+\end{equation}
+kde $\mu$ znaèí dynamickou viskozitu kapaliny, $R$ polomìr kapièky a $v$ její rychlost vzhledem ke kapalinì. Dále mùžete nádobu vložit do homogenního elektrického pole (i v tomto elektrickém poli je stále stejné tíhové pole a mùžete si zvolit vzájemnou orientaci obou polí) orientovaného svisle. Mìøit mùžete rychlosti jednotlivých kapièek. Všechny potøebné parametry, které jsem byl líný oznaèit, si sami nìjak oznaète a považujte je za známé.
+
+\subsection*{2. [O2, Vodafone]}
+
+Definujme operátory $\hat{A}_n$ a $\hat{B}_n$ na prostoru diferencovatelných funkcí jedné reálné promìnné pøedpisy
+\begin{subequations}
+\begin{align}
+\hat{A}_n\psi(x) &= \frac{\text{d}^n}{\text{d}x^n}\psi(x),\\
+\hat{B}_n\psi(x) &= i\frac{\text{d}^n}{\text{d}x^n}\psi(x).
+\end{align}
+\end{subequations}
+Rozhodnìte, pro která $n \in \mathbb{N}_0$ je který z operátorù $\hat{A}_n$ a $\hat{B}_n$ hermitovský \emph{(2 body)}. Dále urèete komutátor $[\hat{A}_2,\hat{C}]$ \emph{(1 bod)}, kde uvažujte operátor
+\begin{equation}
+\hat{C}\psi(x) = x\frac{\text{d}}{\text{d}x}\left(x\psi(x)\right).
+\end{equation}
+Dále vypoèítejte tøetí mocninu operátoru $\hat{D}$ \emph{(1 bod)} definovaného pøedpisem
+\begin{equation}
+\hat{D}\psi(x) = \frac{\text{d}}{\text{d}x}\psi(x) + \frac{\psi(x)}{x}.
+\end{equation}
+
+\section*{Prùbìžná olympiáda - fyzika mladší - 1. kolo}
+\subsection*{1. Projekce vektoru}
+
+Mìjme vektory
+\begin{subequations}
+\begin{align}
+\vec{u} &= (1,3,4),\\
+\vec{v} &= (-1,2,4),\\
+\vec{w} &= (1,4,-7).
+\end{align}
+\end{subequations}
+Urèete projekce vektorù $\vec{u}$ a $\vec{v}$ do smìru vektoru $\vec{w}$, tedy $P_{\vec{w}}\vec{u}$ a $P_{\vec{w}}\vec{v}$ \emph{(1 bod)}. Pro každý z vektorù (všech pìti) navíc vytvoøte nìjaký vektor, který na nìj bude kolmý \emph{(2 body)}. Dále vektory ze zadání (ne tedy ty, které jste sami vytvoøili) normujte (tzn. pøenásobte nìjakým skalárem tak, aby jeho velikost byla rovna 1) \emph{(1 bod)}.
+
+\subsection*{2. Opilý derivátor = veselý vrah}
+
+Mìjme funkce
+\begin{subequations}
+\begin{align}
+f,g&: \mathbb{R} \rightarrow \mathbb{R},\\
+h&:\mathbb{R} \rightarrow \mathbb{R}\setminus\{0\},
+\end{align}
+\end{subequations}
+jejichž derivace existují. Zderivujte výraz
+\begin{equation}
+\frac{\sin\left(f\right) - x\cdot g\cdot\cos\left(f\right)}{h}.\qquad\textit{(2 body)}
+\end{equation}
+Výraz ponìkud poupravte s dodateènou informací $g = f'$. \emph{(1 bod)}
+
+\subsection*{3. Slizký had}
+
+Spoètìte neurèité a urèité integrály
+\begin{subequations}
+\begin{align}
+&\int x\left(2x^2+14\pi\right)^{29}\text{d}x\qquad\textit{(1 bod)}\\
+&\int \frac{x}{\sqrt[4]{x+19\pi^{19}}}\text{d}x\qquad\textit{(1 bod)}\\
+&\int_0^1 \sqrt{1-x^2}\text{d}x\qquad\textit{(2 body)}\\
+&\int_{-\pi}^{\pi} |x\cdot\cos x|^{14\pi^2+\exp(\sinh(\sin(\pi^2)))}\sin{x}\text{d}x.\qquad\textit{(2 body)}
+\end{align}
+\end{subequations}
+
+\subsection*{4. Je lepší mít po cvièení na tváøi :) než :(}
+
+Nakreslete smajlíka \emph{(1 bod)}, podepište se \emph{(1 bod)} a napište parametrické rovnice jeho souèástí (vèetnì urèení intervalu, v jakém se bude pohybovat parametr) \emph{(2 body)}.
+Obrázek smajlíka níže je pouze pro inspiraci. Oba typy smajlíka zmínìné v názvu úlohy mùžete použít, bonusové body za to ovšem nejsou.\\\\
+\includegraphics[scale=0.8]{smajlik.jpg}
+
+\end{document}
