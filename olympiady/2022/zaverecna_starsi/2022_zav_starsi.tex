@@ -7,60 +7,74 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{multicol}
-\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
 \usepackage{enumerate}
 
 \author{Ondřej Zelenka}
 \begin{document}
 \pagestyle{empty}
-\textbf{\center\LARGE Závěrečná paralympiáda starších, LMFS 2022}
+\textbf{\LARGE Závěrečná paralympiáda starších, LMFS 2022}
 
 \begin{multicols}{2}[]
 
-\section{Lítám v díře}
+\section{Koule v díře (14 bodů)}
 Mějme v nekonečně hluboké potenciálové jámě na intervalu $x\in\left(0, L\right)$ částici ve stavu
 \begin{equation}
 \psi\left(x, t=0\right) = N\sin\left(\frac{\pi x}{L}\right)\left[1 + 2\cos\left(\frac{\pi x}{L}\right)\right] \,.
 \end{equation}
 Vlnovou funkci normujte (určete $N$), rozložte na stacionární stavy a načrtněte hustotu pravděpodobnosti nalezení částice v bodě $x$ v časech $t = 0$ a $t = 2mL^2/\pi\hbar$.
 
-\section{V jiném stavu?}
+\section{V jiném stavu? (10 bodů)}
 Mějme několik následovně zadaných vlnových funkcí jednorozměrného kvantově mechanického systému
 \begin{equation}
-\psi_1\left(x\right) = \frac{1}{\sqrt{\pi}}e^{-x^2} \,,\quad \psi_2\left(x\right) = \frac{1}{\sqrt{\pi}}e^{-x^2+ix} \,,\quad \psi_3\left(x\right) = -\frac{1}{\sqrt{\pi}}e^{-x^2} \,.
+\psi_1\left(x\right) = \frac{1}{\sqrt{\pi}}e^{-x^2} \,,\quad \psi_2\left(x\right) = \frac{1}{\sqrt{\pi}}e^{-x^2+ix} \,,\quad \psi_3\left(x\right) = -i\frac{1}{\sqrt{\pi}}e^{-x^2} \,.
 \end{equation}
 Všechny tyto stavy mají stejnou hustotu pravděpodobnosti $\rho\left(x\right) = \left|\psi\left(x\right)\right|^2$. Znamená to, že se z fyzikálního hlediska jedná o stejné stavy i co se týká např. měření hybnosti nebo časového vývoje? Rozhodněte, které z těchto funkcí popisují stejné a které odlišné stavy.
 
-\section{Zajímavý moment hybnosti}
-Mějme nepohybující se částici o spinu 1. Její moment hybnosti je popsán operátory danými maticemi
+\section{Točit, či netočit (11 bodů)}
+Mějme nepohybující se částici o spinu 1 ve stavu $\psi = \left(-1,\, i\sqrt{2},\, 1\right)^T$. Její moment hybnosti je popsán operátory danými maticemi
 \begin{equation}
 \hat{L}_x = \frac{\hbar}{\sqrt{2}}\begin{pmatrix}0 & 1 & 0\\ 1 & 0 & 1\\ 0 & 1 & 0\end{pmatrix} \,,\quad
 \hat{L}_y = \frac{\hbar}{\sqrt{2}}\begin{pmatrix}0 &-i & 0\\ i & 0 &-i\\ 0 & i & 0\end{pmatrix} \,,\quad
 \hat{L}_z =       \hbar           \begin{pmatrix}1 & 0 & 0\\ 0 & 0 & 0\\ 0 & 0 &-1\end{pmatrix} \,.
 \end{equation}
-Částice je ve stavu $\psi = \left(-1,\, i\sqrt{2},\, 1\right)^T$.
 \begin{enumerate}[a)]
 \item Spočtěte celkový moment hybnosti $\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2$ a rozhodněte, zda komutuje s jednotlivými složkami $\hat{L}_x,\,\hat{L}_y,\,\hat{L}_z$.
 \item Určete střední hodnoty měření všech tří složek momentu hybnosti. Jedná se o vlastní stav některého z nich?
 \end{enumerate}
 
-\section{Koule vole}
+\section{Kule vole (8 bodů)}
 Mějme pevnou a nepohyblivou kouli o poloměru 12 metrů na povrchu Země. Stojí na ní skateboardista o zanedbatelných rozměrech a po nekonečně malém šťouchnutí se díky gravitaci rozjíždí dolů. V jaké výšce se od koule odlepí?
 
-\section{Optoelektronový mikroskop}
-V jakém intervalu energií je vlnová délka elektronu, popř. neutronu, menší než vlnová délka viditelného světla (od 400 nm)?
+\section{Prolítnul mi zubr zdí, doufal, že to ubrzdí! (7 bodů)}
+Jakou rychlostí se musí pohybovat zubr o hmotnosti 600 kg, aby byla jeho vlnová délka rovna tloušťce zdi, která je 5 cm?
+%V jakém intervalu energií je vlnová délka elektronu, popř. neutronu, menší než vlnová délka viditelného světla (od 400 nm)?
 
-\section{Elektron v atomu}
-Měříme polohu elektronu v základním stavu v atomu vodíku. Jaké jsou pravděpodobnosti, že jej nalezneme uvnitř sféry o poloměru $a$, a že jej nalezneme mezi sférami o poloměrech $a$ a $2a$, kde $a = 4\pi\hbar^2\epsilon_0/m_eQ_e^2$ je Bohrův poloměr?
+\section{Elektron v atomu (12 bodů)}
+Měříme polohu elektronu v základním stavu atomu vodíku
+\begin{equation}
+\psi\left(r, \theta, \phi\right) = \frac{1}{\sqrt{a^3\pi}}\exp\left(-\frac{r}{a}\right)
+\end{equation}
+Jaké jsou pravděpodobnosti, že jej nalezneme uvnitř sféry o poloměru $a$, a že jej nalezneme mezi sférami o poloměrech $a$ a $2a$, kde $a = 4\pi\hbar^2\epsilon_0/m_eQ_e^2$ je Bohrův poloměr?
 
-\section{Norma}
+\section{Jednička (8 bodů)}
 Normujte stav daný vlnovou funkcí
 \begin{equation}
-\psi\left(x\right) = \left(2\frac{x^2}{x_0^2} - 1\right)e^{-\frac{x^2}{2x_0^2}} \,,\quad\text{pomůcka:}~\int_{-\infty}^\infty x^{2n}e^{-x^2}\mathrm{d}x = \frac{\left(2n\right)!\sqrt{\pi}}{2^{2n}n!}\,,~ n\in\mathbb{N}
+\psi\left(x\right) = \left(2\frac{x^2}{x_0^2} - 1\right)e^{-\frac{x^2}{2x_0^2}} \,,\quad\text{pomůcka:}~\int_{-\infty}^\infty x^{2n}e^{-x^2}\mathrm{d}x = \frac{\left(2n\right)!\sqrt{\pi}}{2^{2n}n!}\,,~ n\in\mathbb{Z}_+ \,.
 \end{equation}
 
-\section{Záchranná}
+\section{Kdo si má ty jednotky pamatovat... (7 bodů)}
 Jaký je fyzikální rozměr (tedy jednotka) vlnové funkce elektronu v $d$ dimenzích?
+
+\section{Býkopes (10 bodů)}
+Víťa v Ekvádoru sleduje falešné předvádění Coriolisovy síly a na pomoc má buldočka - ale jeho pískací otvor se ucpal! Na proražení kruhového otvoru o průměru 1 milimetru je třeba přetlak $10^5$ Pa, jak hluboko je třeba promáčknout stěny, aby se to podařilo? Buldoček má kulový tvar o průměru 10 cm a při zmáčknutí dvěma prsty naproti sobě mají promáčklé strany opět tvar sférických úsečí. Vzduch uvnitř je ideální plyn při tlaku $10^5$ Pa.
+
+\section{Kvantový drát (13 bodů)}
+Najděte stacionární stavy kvantového drátu v nekonečně hluboké pravoúhlé potenciálové jámě, tedy řešte nečasovou Schr\"{o}dingerovu rovnici v potenciálu omezeném ve dvou směrech
+\begin{equation}
+V\left(x, y, z\right) = \left<\begin{matrix}0 & \text{pro } x\in\left(0, a\right),\,y\in\left(0, b\right) \\ \infty & \text{jinak}\end{matrix}\right.\,.
+\end{equation}
+Jaké jsou vlastní energie systému? Jsou degenerované?
 
 %\section{Odlet (12 bodů)}
 %Víťa byl personálem ÚTF deportován z ČR, protože kázal, že $\pi=3$, a $\pi^2=10$. Nejmenovaný profesor napne Víťu o hmotnosti 92 kg na praku popsaném silou $F = -kx$ s tuhostí $k = ???$ na délku $l$ a vystřelí jej po úhlem $45^\circ$. Chce Víťu dostřelit na saskou stranu Krušnohoří 90 kilometrů daleko, o 500 metrů výše. Jaká musí být délka $l$, aby se mu to podařilo?
@@ -81,9 +95,7 @@ Jaký je fyzikální rozměr (tedy jednotka) vlnové funkce elektronu v $d$ dime
 %Fámulové dorazili do exilu v Ekvádoru a na rovníku sledují show pro turisty, jak se voda v záchodě točí na různou stranu na různých polokoulích. Jako konkurenci sestaví pořádný experiment, ve kterém je tento jev skutečně vidět jako důsledek Coriolisovy síly. Na jakou stranu se bude vír stáčet na které polokouli, a proč?
 %%Na jakou stranu na které, a proč? Rozmyslete si důkladně směry a uvažujte, že je Coriolisova síla dostatečně silná, že způsobí znatelný efekt.
 %
-%\section{Buldoček (10 bodů)}
-%Ondra dorazil do Ekvádoru, sleduje falešné předvádění Coriolisovy síly a na pomoc má buldočka - ale jeho pískací otvor se ucpal! Na proražení kruhového otvoru o průměru 1 milimetru je třeba síly ???, jak hluboko je třeba promáčknout stěny, aby se to podařilo? Buldoček má kulový tvar o průměru 10 cm a při zmáčknutí dvěma prsty naproti sobě mají promáčklé strany opět tvar sférických úsečí. Vzduch uvnitř je ideální plyn při tlaku 1 bar.
-%
+
 %\section{Sladká pomsta s.r.o. (14 bodů)}
 %Víťa se rozhodl pomstít ÚTF za své vyhnanství zničením budovy MFF v Tróji. Hacknul systémy NASA a změnil dráhu ISS, která dosud obíhala 350 km nad zemským povrchem. Jedním krátkým zážehem motorů přímo proti směru pohybu ji zpomalil bez okamžité změny směru rychlosti a její nové přízemí je v přízemí trojské budovy. O kolik změnil Víťa její rychlost?
 %
@@ -99,14 +111,14 @@ Jaký je fyzikální rozměr (tedy jednotka) vlnové funkce elektronu v $d$ dime
 %\section{}
 %Ing. Mgr. Jiří Svoboda, PCH je v rakvi ve svém krému a thoriu.
 
-\section*{(Ne)užitečné konstanty}
-\begin{subequations}
-\begin{align*}
-G &= 6.67\cdot 10^{-11}\, \frac{\mathrm{m}^3}{\mathrm{kg}\cdot \mathrm{s}^2} \\
-\mathrm{PCH} &= \text{první certifikovaný hrobník} \\
-\text{poločas rozpadu thoria} &\doteq 14.05\cdot 10^{9}\,\mathrm{yr}
-\end{align*}
-\end{subequations}
+%\section*{(Ne)užitečné konstanty}
+%\begin{subequations}
+%\begin{align*}
+%G &= 6.67\cdot 10^{-11}\, \frac{\mathrm{m}^3}{\mathrm{kg}\cdot \mathrm{s}^2} \\
+%\mathrm{PCH} &= \text{první certifikovaný hrobník} \\
+%\text{poločas rozpadu thoria} &\doteq 14.05\cdot 10^{9}\,\mathrm{yr}
+%\end{align*}
+%\end{subequations}
 
 \end{multicols}
 
